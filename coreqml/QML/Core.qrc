@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/Core">
+        <file>AppScreen.qml</file>
+        <file>Application.qml</file>
+        <file>ApplicationWindow.qml</file>
+        <file>Button.qml</file>
+        <file>ButtonPalette.qml</file>
+        <file>ButtonPaletteData.qml</file>
+        <file>ButtonPaletteSelector.qml</file>
+        <file>CoreStyle.qml</file>
+        <file>DialogController.qml</file>
+        <file>DialogManager.qml</file>
+        <file>DialogView.qml</file>
+        <file>NavigationBar.qml</file>
+        <file>Palette.qml</file>
+        <file>PaletteManager.qml</file>
+        <file>Stack.qml</file>
+        <file>Utils.js</file>
+        <file>View.qml</file>
+    </qresource>
+</RCC>

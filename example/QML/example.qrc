@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/QML">
+        <file>ButtonsDialog.qml</file>
+        <file>ExampleStyle.qml</file>
+        <file>ExampleWindow.qml</file>
+        <file>GameView.qml</file>
+        <file>MainView.qml</file>
+        <file>PaletteDark.qml</file>
+        <file>PaletteLight.qml</file>
+        <file>SplashView.qml</file>
+        <file>XKCDView.qml</file>
+    </qresource>
+    <qresource>
+        <file>res/back_dark.svg</file>
+        <file>res/back_dark_pressed.svg</file>
+        <file>res/back_light.svg</file>
+        <file>res/back_light_pressed.svg</file>
+        <file>res/game_background_dark.svg</file>
+        <file>res/game_background_light.svg</file>
+        <file>res/home_dark.svg</file>
+        <file>res/home_light.svg</file>
+        <file>res/palette_dark.svg</file>
+        <file>res/palette_dark_pressed.svg</file>
+        <file>res/palette_light.svg</file>
+        <file>res/palette_light_pressed.svg</file>
+        <file>res/play_btn_dark.svg</file>
+        <file>res/play_btn_light.svg</file>
+        <file>res/reload_dark.svg</file>
+        <file>res/reload_dark_pressed.svg</file>
+        <file>res/reload_light.svg</file>
+        <file>res/reload_light_pressed.svg</file>
+        <file>res/splash.gif</file>
+        <file>res/xkcd_dark.svg</file>
+        <file>res/xkcd_dark_pressed.svg</file>
+        <file>res/xkcd_light.svg</file>
+        <file>res/xkcd_light_pressed.svg</file>
+    </qresource>
+</RCC>

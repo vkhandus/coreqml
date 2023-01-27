@@ -1,6 +1,5 @@
 # CoreQML
 
----
 
 QtQuick brings to the developers a powerful tool to truly separate application logic and UI. However, if used solely without QtQuick.Controls module (which is a usual case for embedded platforms), lacks useful classes for writing a maintainable MVC application, which often includes interaction between Qml/C++ classes, navigation between views, status bar, dialogs, splash screen, localization management, and palettes/style management. CoreQML provides clear and agile classes/components for GUI applications, automatic bindings between C++ and QML code, and creates a useful abstraction level for basic MVC applications.
 
@@ -8,11 +7,9 @@ This is not a UI framework, but it is a set of architecture solutions that you c
 
 > The code is pure QtQuick and does not have dependencies on Qt Quick Controls. This is done to make it compatible with embedded systems, like EGLFS with a single window.
 
-## 
 
 ## Quick Start
 
----
 
 **CoreQML** code is located in the **coreqml** folder. This code can be fully or partly reused in your app. To start your own application, just copy it into your development tree. It does not have external dependencies, besides Qt.
 
@@ -22,11 +19,10 @@ More info on system design and components can be found below.
 
 Use the sources in the **example** folder as reference. It is not a part of **CoreQML**.
 
-## 
 
-## Design
 
----
+## Overview
+
 
 The **CoreQML** Model-View-Controller idea is inspired by the old versions of UIKit.
 
@@ -54,7 +50,6 @@ An image below shows relation between above components. Blue bidirectional arrow
 
 ## Components
 
----
 
 ### CApplication and CApplicationWindow
 
@@ -76,7 +71,7 @@ int main( int argc, char* argv[] )
 
 User should subclass **CApplication** and override it's *CApplication::run()* method. You can also parse command-line arguments in Application constructor.
 
-Below is a basic implementation, that creates an **CApplicationWindow** and populates it with the root application [ViewContoller](#Views and Navigation)
+Below is a basic implementation, that creates an **CApplicationWindow** and populates it with the root application [ViewContoller](#views-and-navigation)
 
 ```cpp
 // Application.cpp
@@ -94,7 +89,7 @@ int Application::run()
 }
 ```
 
-**CoreQML** **CApplicationWindow** is a *QQuickView* subclass. It extends *QQuickView* functionality by attaching an **ApplicationWindow** Qml component and providing API for displaying user **Views**. You can also subclass **CoreQML** **ApplicationWindow** to register own application [palettes and styles.](#Palette and styling)
+**CoreQML** **CApplicationWindow** is a *QQuickView* subclass. It extends *QQuickView* functionality by attaching an **ApplicationWindow** Qml component and providing API for displaying user **Views**. You can also subclass **CoreQML** **ApplicationWindow** to register own application [palettes and styles.](#palette-and-styling)
 
 ### Views and Navigation
 
